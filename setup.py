@@ -22,7 +22,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-        'follow_line_a1_X3 = Follow_line_withlidar_ros2.follow_line_a1_X3:main',
+        'follow_line_lidar = Follow_line_withlidar_ros2.follow_line_lidar:main',
         ],
     },
 )
