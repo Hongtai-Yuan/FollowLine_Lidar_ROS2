@@ -12,16 +12,6 @@ def generate_launch_description():
         package='njau_line',
         executable='follow_line_a1_X3',
     )
-    #lidar_node = IncludeLaunchDescription(PythonLaunchDescriptionSource([os.path.join(get_package_share_directory('sllidar_ros2'), 'launch'),
-#'/sllidar_launch.py'])
-#)
-    bringup_node = IncludeLaunchDescription(PythonLaunchDescriptionSource([os.path.join(get_package_share_directory('yahboomcar_bringup'), 'launch'),
-'/yahboomcar_bringup_X3_launch.py'])
-)
-    Joy_node = Node(
-        package='joy',
-        executable='joy_node',
-    )
 
-    launch_description = LaunchDescription([linefollow_node,bringup_node,Joy_node]) 
+    launch_description = LaunchDescription([linefollow_node]) 
     return launch_description
